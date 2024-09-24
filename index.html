@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microblogging App</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Microblogging App</h1>
+
+        <!-- Post Form -->
+        <form id="postForm" enctype="multipart/form-data">
+            <input type="text" id="user" name="user" placeholder="Enter your username" required>
+            <textarea id="content" name="content" placeholder="Write something..." required></textarea>
+            <input type="file" id="image" name="image">
+            <button type="submit">Post</button>
+        </form>
+
+        <!-- Posts Section -->
+        <div id="posts"></div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
